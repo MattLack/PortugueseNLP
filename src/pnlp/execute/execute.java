@@ -49,7 +49,10 @@ public class execute {
 
 		// =======================================================================================//
 		
-		Init.getInstance().Execução(input);
+		Init.getInstance().MAINxml(input);
+		System.out.println("Palavras no DIc: "+ Init.getInstance().toStringPalavrasDIC());
+		System.out.println("Palavras ner: "+ Init.getInstance().toStringNERList());
+		System.out.println("Palavras fora do dic: "+Init.getInstance().toStringPalavrasForaDIC());
 		
 		
 	}
